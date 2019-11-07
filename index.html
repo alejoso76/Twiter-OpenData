@@ -10,9 +10,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="getTable.js"></script>
 <body>
-    <h2>Calidad del aire en Pereira</h2>
-    <button onclick="getTable()">Mostrar Todos los Datos</button>
-    <button onclick="getTablePereira()">Mostrar Pereira</button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="graficas.html">Graficas</a></li>
+    </ul>
+    <h2>Calidad del aire en municipios de Risaralda</h2>
+    <p>Con los siguientes botones podra ver distintas consultas a la BBDD.</p>
+
+    <button class="myButton" onclick="getTable()">Mostrar Todos los Datos</button>
+    <button class="myButton" onclick="getTablePereira()">Mostrar Pereira</button>
     <table id="table1">
         <thead></thead>
     </table>

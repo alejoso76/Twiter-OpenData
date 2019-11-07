@@ -20,14 +20,6 @@ $.ajax({
 }).done(function(data) {
 alert("Retrieved " + data.length + " records from the dataset!");
 console.log(data);
-/*
-data.forEach(function (o) {
-  this.appendChild(document.createTextNode(Object.keys(o).map(function (k) {
-      return k + ': ' + JSON.stringify(o[k]);
-  }).join(', ')));
-  this.appendChild(document.createElement('br'));
-}, document.getElementById('out'));
-*/
 
 var tbody = $("<tbody />"),tr;
   tbody.append("<th>Ciudad</th> <th>Estacion</th> <th>Anio</th> <th>Semestre</th> <th>Minimo</th> <th>Maximo</th>");
@@ -37,17 +29,13 @@ var tbody = $("<tbody />"),tr;
         tr.append("<td>"+text+"</td>")
       });
       tr.appendTo(tbody);
-      
-
   });
-  tbody.appendTo("#table1"); // only DOM insertion  
-
-
+  tbody.appendTo("#table1"); // only DOM insertion
 return data;
 });
 }
 
-
+//?-----------------------------------------------------------------------------------------
 
 function getTablePereira(){
   $.ajax({
@@ -61,15 +49,7 @@ function getTablePereira(){
   }).done(function(data) {
   alert("Retrieved " + data.length + " records from the dataset!");
   console.log(data);
-  /*
-  data.forEach(function (o) {
-    this.appendChild(document.createTextNode(Object.keys(o).map(function (k) {
-        return k + ': ' + JSON.stringify(o[k]);
-    }).join(', ')));
-    this.appendChild(document.createElement('br'));
-  }, document.getElementById('out'));
-  */
-  
+
   var tbody = $("<tbody />"),tr;
     tbody.append("<th>Ciudad</th> <th>Estacion</th> <th>Anio</th> <th>Semestre</th> <th>Minimo</th> <th>Maximo</th>");
     $.each(data,function(_,obj) {
@@ -78,15 +58,11 @@ function getTablePereira(){
           tr.append("<td>"+text+"</td>")
         });
         tr.appendTo(tbody);
-        
-  
     });
-    tbody.appendTo("#table1"); // only DOM insertion  
-  
-  
+    tbody.appendTo("#table1"); // only DOM insertion
   return data;
   });
   }
-  
-  
+
+//?-----------------------------------------------------------------------------------------
 

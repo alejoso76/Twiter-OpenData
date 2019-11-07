@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="575382442816-pooasp0nghgti7kc4c15rjsp8uslsm94.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Login</title>
+</head>
+    <script type="text/javascript" language="javascript">
+        function redirect()
+        {
+            window.location.href="index.html";
+        }
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<body>
+    <container>
+        <h2>Login Social</h2>
+        <p>Para iniciar sesión y usar el aplicativo pulse el botón.</p>
+        <div class="g-signin2" data-onsuccess="onSignIn" onclick="redirect()"></div>
+    </container>
+
+</body>
+</html>
