@@ -38,6 +38,13 @@ return data;
 //?-----------------------------------------------------------------------------------------
 
 function getTablePereira(){
+  /*
+  ciudad=document.getElementById("municipio").textContent;
+  str1="https://www.datos.gov.co/resource/a2ud-mjag.json?ciudad=";
+  str2=String(ciudad);
+  str3=str1.concat(str2);
+  console.log(ciudad);
+  */
   $.ajax({
     url: "https://www.datos.gov.co/resource/a2ud-mjag.json?ciudad=Pereira",
     type: "GET",
