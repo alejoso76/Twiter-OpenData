@@ -1,10 +1,10 @@
-window.onload = function minPereira() {
+window.onload = function maxPereira() {
     var dataPoints = [];
     var chart = new CanvasJS.Chart("chartContainer1", {
         animationEnabled: true,
         theme: "light2",
         title: {
-            text: "Minimos Pereira en todas las Estaciones"
+            text: "Maximos Pereira en todas las Estaciones"
         },
         axisY: {
             title: "µg/m3",
@@ -21,9 +21,9 @@ window.onload = function minPereira() {
         for (var i = 0; i < data.length; i++) {
             dataPoints.push(
                 {x: new Date(data[i].a_o), 
-                 y: parseInt(data[i].dato_m_nimo_g_m3)
+                 y: parseInt(data[i].dato_m_ximo_g_m3)
                 });
-            console.log(data[i].dato_m_nimo_g_m3);
+            console.log(data[i].dato_m_ximo_g_m3);
         }
         chart.render();
     
@@ -32,4 +32,3 @@ window.onload = function minPereira() {
     $.getJSON("https://www.datos.gov.co/resource/a2ud-mjag.json?ciudad=Pereira", addData);
     
     }
-

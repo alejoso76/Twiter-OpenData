@@ -1,11 +1,39 @@
 html{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    background: rgb(100,12,185);
+    background: linear-gradient(28deg, rgba(100,12,185,1) 0%, rgba(45,10,147,1) 45%, rgba(9,9,121,1) 63%, rgba(0,212,255,1) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
 }
 
-container{
+body{
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.loginG{
     text-align: center;
+    margin-top: 170px!important;
     margin: auto;
-    width: 50%;
-    border: 3px solid green;
+    width: 30%;
+    height: 40%;
     padding: 10px;
+    overflow: auto;
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 0px solid #000000;
+    background-color: #f0eeeb;
+}
+
+
+.abcRioButton{
+    margin-top: 10px!important;
+    margin: auto;
+    display: block;
+}
+
+.col{
+    height: 75px;
 }
