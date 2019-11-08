@@ -24,7 +24,7 @@ alert("Retrieved " + data.length + " records from the dataset!");
 console.log(data);
 
 var tbody = $("<tbody />"),tr;
-  tbody.append("<th>Ciudad</th> <th>Estacion</th> <th>Anio</th> <th>Semestre</th> <th>Minimo</th> <th>Maximo</th>");
+  tbody.append("<th>Ciudad</th> <th>Estacion</th> <th>Anio</th> <th>Semestre</th> <th>Minimo µg/m3</th> <th>Maximo µg/m3</th>");
   $.each(data,function(_,obj) {
       tr = $("<tr />");
       $.each(obj,function(_,text) {
@@ -60,7 +60,7 @@ function getTablePereira(municipio){
   console.log(data);
 
   var tbody = $("<tbody />"),tr;
-    tbody.append("<th>Ciudad</th> <th>Estacion</th> <th>Anio</th> <th>Semestre</th> <th>Minimo</th> <th>Maximo</th>");
+    tbody.append("<th>Ciudad</th> <th>Estacion</th> <th>Anio</th> <th>Semestre</th> <th>Minimo µg/m3</th> <th>Maximo µg/m3</th>");
     $.each(data,function(_,obj) {
         tr = $("<tr />");
         $.each(obj,function(_,text) {
