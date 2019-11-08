@@ -14,7 +14,6 @@
         function getMunicipio(){
         var municipio = String(document.getElementById("municipio").value);
         console.log(municipio);
-        document.getElementById("prueba").innerHTML = municipio;
         return municipio;
         }
     </script>
@@ -25,12 +24,13 @@
     </ul>
     <ul>
         <li><a href="index.html">Mostrar Todo</a></li>
-        <li><a href="consulta.html">Consulta</a></li>
+        <li><a href="index2.html">Consulta</a></li>
     </ul>
     <h2>Calidad del aire en municipios de Risaralda</h2>
     <p>Con los siguientes botones podra ver distintas consultas a la BBDD.</p>
 
-    <button class="myButton" onclick="getTable()">Mostrar Todos los Datos</button>
+    <input type="text" name="Municipio" id="municipio" placeholder="Ingrese un dato que desee consultar">
+    <button class="myButton" onclick="getTablePereira(getMunicipio())">Mostrar Consulta</button>
     <table id="table1">
         <thead></thead>
     </table>

@@ -8,6 +8,8 @@
     }
   );
 };*/
+
+
 function getTable(){
 $.ajax({
   url: "https://www.datos.gov.co/resource/a2ud-mjag.json",
@@ -37,7 +39,7 @@ return data;
 
 //?-----------------------------------------------------------------------------------------
 
-function getTablePereira(){
+function getTablePereira(municipio){
   /*
   ciudad=document.getElementById("municipio").textContent;
   str1="https://www.datos.gov.co/resource/a2ud-mjag.json?ciudad=";
@@ -46,7 +48,7 @@ function getTablePereira(){
   console.log(ciudad);
   */
   $.ajax({
-    url: "https://www.datos.gov.co/resource/a2ud-mjag.json?ciudad=Pereira",
+    url: "https://www.datos.gov.co/resource/a2ud-mjag.json?$q="+municipio,
     type: "GET",
     data: {
       "$limit" : 5000,
